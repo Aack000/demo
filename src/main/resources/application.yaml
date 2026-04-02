@@ -1,3 +1,8 @@
 spring:
   application:
     name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+    password: YX050709 #替换为PgAdmin中实际设置的密码
