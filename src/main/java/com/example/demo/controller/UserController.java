@@ -24,9 +24,9 @@ public class UserController {
         return userService.login(userDTO);
     }
 
-    // 3.获取用户信息(查)-用于测试拦截器放行
+    // 3.根据ID查询用户-路径为 GET /api/users/{id}
     @GetMapping("/{id}")
-    public Result<String> getUser(@PathVariable("id") Long id) {
-        return Result.success("查询成功，正在返回ID为" + id + "的用户信息");
+    public Result<String> getUserById(@PathVariable("id") Long id) {
+        return userService.getUserById(id);
     }
 }
