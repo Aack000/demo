@@ -6,6 +6,11 @@ spring:
     username: postgres
     driver-class-name: org.postgresql.Driver
     password: YX050709 #替换为PgAdmin中实际设置的密码
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
 
 mybatis-plus:
   configuration:
